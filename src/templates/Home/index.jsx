@@ -10,7 +10,8 @@ class Home extends Component {
     posts: [],
     allPosts: [],
     page: 0,
-    postPerPage: 10
+    postPerPage: 10,
+    searchValue: ''
   }
 
   async componentDidMount() {
@@ -32,8 +33,7 @@ class Home extends Component {
       page,
       postPerPage,
       allPosts,
-      posts,
-      searchValue
+      posts
     } = this.state;
 
     const nextPage = page + postPerPage;
