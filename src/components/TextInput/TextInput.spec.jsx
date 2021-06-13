@@ -27,7 +27,7 @@ describe('<TextInput />', () => {
 
   test('should match snapshot', () => {
     const fn = jest.fn()
-    const { container } = render(<TextInput handleChange={fn} />)
+    const { container } = render(<TextInput handleChange={fn} searchValue="o valor" />)
     expect(container).toMatchSnapshot()
   })
 })
